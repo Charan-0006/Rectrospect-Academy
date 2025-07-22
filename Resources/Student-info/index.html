@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrospect Academy</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(120deg, #f0f4f8, #d9e4f5);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: auto;
+        }
+        .passion {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        body.dark-mode {
+        background: linear-gradient(120deg, #1a1a1a, #333);
+        color: #f0f4f8;
+        }
+
+        body.dark-mode .card {
+        background-color: #444;
+        color: #f0f4f8;
+        }
+
+        body.dark-mode .footer {
+        background-color: #222;
+        color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar sticky-top bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Rectrospect-Academy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../../../Function/AboutUs.html">About us</a></li>
+                  <li><a class="dropdown-item" href="../../../Function/register.html">Register</a></li>
+                  <li><a class="dropdown-item" href="../../../Function/contact.html">Contact Us</a></li>
+                  <li><a class="dropdown-item" href="../../../Function/Singup_User-Student.html">Signup as Student</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                </ul>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+    <!-- Main Section -->
+    <button id="darkModeToggle" class="btn btn-secondary" style="position: fixed;z-index: +2; bottom: 100px; right: 20px;">Dark Mode</button>
+    <button id="scrollToTop" class="btn btn-primary" style="position: fixed; bottom: 20px; right: 20px; display: none;z-index: +2;">Scroll Up</button>
+    <main class="content">
+        <!-- Dark Mode Toggle Button -->
+    <section class="Student-card py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">Our Students</h2>
+                <div class="row g-4">
+                    <!-- Student Card 1 -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <img src="stimg/s1.jpg" class="card-img-top" alt="Student Photo">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">John Doe</h3>
+                                <p><strong>Branch:</strong> Computer Science</p>
+                                <p><strong>Year:</strong> 2nd Year</p>
+                                <p><strong>Passion:</strong> <span class="passion">AI & Robotics</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Student Card 2 -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <img src="stimg/s2jpeg.jpeg" class="card-img-top" alt="Student Photo">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Jane Smith</h3>
+                                <p><strong>Branch:</strong> Electrical Engineering</p>
+                                <p><strong>Year:</strong> 3rd Year</p>
+                                <p><strong>Passion:</strong> <span class="passion">Sustainability</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Student Card 3 -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <img src="stimg/s5jpg.jpg" class="card-img-top" alt="Student Photo">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Mark Johnson</h3>
+                                <p><strong>Branch:</strong> Mechanical Engineering</p>
+                                <p><strong>Year:</strong> 1st Year</p>
+                                <p><strong>Passion:</strong> <span class="passion">Robotics</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Student Cards -->
+                    <!-- Card 4 -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <img src="stimg/s4.jpg" class="card-img-top" alt="Student Photo">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Jane Doe</h3>
+                                <p><strong>Branch:</strong> Electrical Engineering</p>
+                                <p><strong>Year:</strong> 3rd Year</p>
+                                <p><strong>Passion:</strong> <span class="passion">Fashion</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <img src="stimg/s6.jpg" class="card-img-top" alt="Student Photo">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Mary Jane</h3>
+                                <p><strong>Branch:</strong> Electrical Engineering</p>
+                                <p><strong>Year:</strong> 3rd Year</p>
+                                <p><strong>Passion:</strong> <span class="passion">Cyber Security</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Retrospect Academy. All rights reserved.</p>
+    </footer>
+    <script>
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+    
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                darkModeToggle.textContent = 'Toggle Light Mode';
+            } else {
+                darkModeToggle.textContent = 'Toggle Dark Mode';
+            }
+        });
+    
+        // Scroll to Top Functionality
+        const scrollToTopButton = document.getElementById('scrollToTop');
+    
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopButton.style.display = "block";
+            } else {
+                scrollToTopButton.style.display = "none";
+            }
+        };
+    
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+
+
+    </script>
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
