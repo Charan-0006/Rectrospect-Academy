@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrospect-Academy</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, .container {
+            min-width: 00px;
+        }
+        .bgimage {
+            background-image: url('./Resources/collegematebg.png');
+            background-color: black;
+            background-size: cover;
+            background-position: center;
+            min-height: 850px;
+            color: white;
+        }
+
+        .inpage-title {
+            color: #9eaaec;
+            text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+            font-size: 2.5rem;
+        }
+        .h1{
+            color:bisque;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+        }
+
+        footer a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg- shadow-sm">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand me-auto" href="./index.html">
+                <img class="img-fluid" src="./Resources/rectro-logo.jpg" alt="Logo" style="width: 50px; height: auto;">
+            </a>
+    
+            <!-- Title -->
+            <h1 class="text-center mx-auto m-3 ">Retrospect Academy</h1>
+    
+            <!-- Toggle Button (Visible only on smaller screens) -->
+            <button 
+                class="navbar-toggler d-lg-none ms-auto" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                onclick="closeNavbar()"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Collapsible Menu -->
+            <div class="collapse navbar-collapse"  id="navbarNav">
+                <div class="border border-dark">
+                    <ul class="navbar-nav">
+                        <li class="nav-item m-1">
+                            <a href="./Function/contact.html" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item m-1">
+                            <a href="./Function/AboutUs.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item m-1">
+                            <a href="./Function/User-or-Student.html" class="nav-link">SignUp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Buttons (For larger screens only) -->
+            <div class="d-none d-lg-flex">
+                <a href="./Function/contact.html" class="btn btn-outline-primary me-2">Contact</a>
+                <a href="./Function/AboutUs.html" class="btn btn-outline-primary me-2">About Us</a>
+                <a href="./Function/User-or-Student.html" class="btn btn-outline-primary">SignUp</a>
+            </div>
+        </div>
+    </nav>    
+    
+
+    <div class="bgimage d-flex flex-column align-items-center justify-content-center text-center">
+        <h2 class="inpage-title margin-bottom-20px">Discover the college of your Dreams with</h2>
+        <h2 class="inpage-title margin-bottom-20px">Retrospect-Academy</h2>
+
+        <!-- Dropdown and Search Section -->
+        <div class="container d-flex justify-content-center align-items-center flex-wrap mt-5">
+            <div class="dropdown me-3">
+                <label for="universityDropdown" class="form-label">College</label><br>
+                <select id="universityDropdown" class="form-select">
+                    <option value="" disabled selected>Choose University</option>
+                    <option value="./Drop-Down-Menu/AmritaUniversity">Amrita University</option>
+                    <option value="./Drop-Down-Menu/Birla Institute of Technology">Birla Institute of Technology</option>
+                    <option value="./Drop-Down-Menu/IIT">IIT's</option>
+                    <option value="./Drop-Down-Menu/NIT">NIT's</option>
+                    <option value="./Drop-Down-Menu/IIIT">IIIT's</option>
+                </select>
+            </div>
+
+            <div class="me-3">
+                <label for="Course" class="form-label">Branch</label>
+                <select id="Course" class="form-select">
+                    <option value="Default">Select-Type</option>
+                    <option value="cse">CSE</option>
+                    <option value="ece">ECE</option>
+                    <option value="eee">EEE</option>
+                    <option value="mech">Mechanical</option>
+                    <option value="civil">Civil</option>
+                    <option value="ai">AI/ML/DS</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="year" class="form-label">Year</label>
+                <select id="year" class="form-select">
+                    <option value="Default">Select-Year</option>
+                    <option value="./Resources/Student-info/index.html">First</option>
+                    <option value="./Resources/Student-info/index.html">Second</option>
+                    <option value="./Resources/Student-info/index.html">Third</option>
+                    <option value="./Resources/Student-info/index.html">Fourth</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <button class="btn btn-primary" onclick="collect_data()">Search</button>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h1 class="text-center">How does Retrospect-Academy Work?</h1>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <p class="fs-4 text-center">
+                    Retrospect-Academy is a platform where you can connect with the students from the college you want to join. Get all your questions answered here.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <ul class="fs-4">
+                    <li>Choose a college, branch, and other options and search</li>
+                    <li>Check for campus and student details</li>
+                    <li>Select a college representative and book an appointment</li>
+                    <li>Have an interactive one-on-one session</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="d-flex justify-content-center align-items-center p-4" style="background-color: #4084F3;">
+        <img class="img-fluid" src="./Resources/Relationship.png" style="width: 900px; height: 500px;" alt="Centered Image">
+    </div>
+    
+    <!-- Footer Section -->
+    <footer class="text-center py-4">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <h3>Contact</h3>
+                    <p>Email: info@retrospectacademy.com</p>
+                    <p>Phone: +123 456 7890</p>
+                    <p>Address: 123 Main Street, Your City</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>About Us</h3>
+                    <p>Retrospect Academy is dedicated to empowering students by providing insights and experiences shared by alumni and current students.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Follow Us</h3>
+                    <p>
+                        <a href="#">Facebook</a> |
+                        <a href="#">Instagram</a> |
+                        <a href="#">YouTube</a>
+                    </p>
+                </div>
+            </div>
+            <p>&copy; 2024 Retrospect Academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add hover effect using JavaScript
+        const links = document.querySelectorAll("footer a");
+        links.forEach(link => {
+            link.addEventListener("mouseover", () => {
+                link.classList.add("hovered");
+            });
+            link.addEventListener("mouseout", () => {
+                link.classList.remove("hovered");
+            });
+        });
+
+        // Query Selector
+        function collect_data() {
+            const university = document.getElementById("universityDropdown");
+            const course = document.getElementById("Course");
+            const year = document.getElementById("year");
+
+            const universityValue = university.value; 
+            const courseValue = course.value; 
+            const yearValue = year.value; 
+
+            if (!universityValue) {
+                alert("Please select a University.");
+                return;
+            }
+
+            let targetDirectory = '';
+
+            if (universityValue && courseValue !== "Default" && yearValue !== "Default") {
+                targetDirectory = `${yearValue}`;
+            } else if (universityValue && courseValue !== "Default") {
+                targetDirectory = `${universityValue}/View_College/index.html`;
+            } else if (universityValue) {
+                targetDirectory = `${universityValue}/index.html`;
+            }
+
+            window.location.href = targetDirectory;
+        }
+
+        // close Navbar based on screen size
+        function closeNavbar() {
+            var navbarCollapse = document.querySelector('#navbarNav');
+            if (navbarCollapse.classList.contains('show')) {
+            navbarCollapse.classList.remove('show');
+            var navbarToggler = document.querySelector('.navbar-toggler');
+            navbarToggler.setAttribute('aria-expanded', 'false');
+            }
+        }
+        var navbarToggler = document.querySelector('.navbar-toggler');
+        var navbarCollapse = document.querySelector('#navbarNav');
+        window.addEventListener('resize', function() {
+            if (window.innerWidth >= 992) {
+            navbarCollapse.classList.remove('show');
+            navbarToggler.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // style query
+        document.addEventListener("DOMContentLoaded", () => {
+        const footerLinks = document.querySelectorAll("footer a");
+
+        footerLinks.forEach(link => {
+            link.addEventListener("mouseover", () => {
+                link.style.textDecoration = "underline";
+            });
+            link.addEventListener("mouseout", () => {
+                link.style.textDecoration = "none";
+            });
+        });
+    });
+
+
+    </script>
+</body>
+</html>
